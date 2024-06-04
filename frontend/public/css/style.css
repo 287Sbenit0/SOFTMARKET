@@ -1,0 +1,10 @@
+.product-card {
+    margin-bottom: 20px;
+}
+.product-card img {
+    height: 200px;
+    object-fit: cover;
+}
+.product-card .card-body {
+    text-align: center;
+}
