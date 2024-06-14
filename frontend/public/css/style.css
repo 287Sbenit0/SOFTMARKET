@@ -1,0 +1,84 @@
+.product-card {
+    position: relative;
+    overflow: hidden;
+    border: none;
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.product-card .card {
+    border: none;
+    overflow: hidden;
+}
+
+.product-card .card-image {
+    position: relative;
+    overflow: hidden;
+    height: 0;
+    padding-top: 75%; 
+}
+
+.product-card .card-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.product-card .card-body {
+    padding: 10px;
+    text-align: center;
+}
+
+.product-card .card-title {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.product-card .card-text {
+    font-size: 1em;
+    color: #333;
+}
+
+.product-card .btn.add-to-cart {
+    margin-top: 10px;
+}
+
+.product-card:hover .card-image img {
+    transform: scale(1.1);
+}
+
+.cart-sidebar {
+    position: fixed;
+    right: -300px; /* Hidden by default */
+    top: 0;
+    width: 300px;
+    height: 100%;
+    background-color: #f8f9fa;
+    border-left: 1px solid #ddd;
+    padding: 20px;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+    transition: right 0.3s ease;
+    overflow-y: auto;
+}
+
+.cart-sidebar.open {
+    right: 0; /* Visible when open */
+}
+
+.cart-sidebar h4 {
+    margin-top: 0;
+}
+
+.cart-item .card-img {
+    width: 80px; /* Adjust the width of the image in the cart */
+    height: auto; /* Maintain the aspect ratio */
+}
+
+.cart-item .card-body {
+    padding: 10px;
+    text-align: left;
+}
